@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind css style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#FF1F3D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="  grid grid-rows-2 items-center pl-10 pt-8 px-10 md:pt-8 md:px-10  lg:pt-8 lg:px-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+                            <button class="btn btn-sm normal-case">Sort by view</button>
+                        </ul>
+                    </div>
+                    <img src="Logo.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+
+                        <button class="btn btn-sm normal-case" id="sortButton">Sort by view</button>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn bg-color-primary text-white w-20 h-6 " id="blogButton">Blog</button>
+
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <div class="tab-container w-full">
+            <div class="tabs tabs p-5 mx-auto w-96 text-lg text-center flex justify-center" id="tab-container">
+                <!--  <a class="tab btn btn-sm normal-case mx-4">Tab 1</a> 
+                <a class="tab btn btn-sm normal-case mx-4">Tab 2</a> 
+                <a class="tab btn btn-sm normal-case mx-4">Tab 3</a> -->
+            </div>
+        </div>
+
+        <div id="card-container" class="grid grid-cols-1 mx-10 mt-4 md:grid-cols-2 md:mx-10 md:mt-4 lg:grid-cols-4 gap-2 lg:mx-10 lg:mt-4">
+           <!--   <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img class="relative " src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="Shoes" /></figure>
+            
+                    <button id="timeBtn" class="btn normal-case bg-slate-950 border border-slate-950 text-white  absolute bottom-44 right-4">3 hrs 56 min ago</button>
+                
+                
+                <div class="card-body">
+                    <div class="flex gap-2 items-center">
+                        <div class="avatar">
+                            <div class="w-14 rounded-full">
+                                <img src="https://i.ibb.co/D9wWRM6/olivia.jpg" />
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="card-title">Shape of You</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div class="ml-16 text-base text-zinc-500">
+                            <p>Olivia Mitchell</p>
+                        </div>
+
+                        <div class="w-5">
+                            <img src="checklist_10629607.png" alt="Shoes" />
+                        </div>
+
+                    </div>
+                    <p class="ml-16 text-base text-zinc-500">100K <span>views</span></p>
+                </div>
+            </div>   -->
+
+        </div>
+
+        <div id="no-card-container" class="flex justify-center items-center  mx-10 pb-24 pt-24">
+            <!--    <img src="Icon.png" alt="">
+            <h2 class="text-3xl font-bold">Oops!! Sorry, There is no <br>
+                content here</h2> -->
+        </div>
+
+    </main>
+
+    <script src="script/tube.js"></script>
+</body>
+
+</html>

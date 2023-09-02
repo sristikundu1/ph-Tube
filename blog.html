@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="border rounded-lg bg-rose-600 p-14 m-14 text-white">
+        <h1 class="text-4xl text-center underline mb-3"> The scope of var, let, and const</h1>
+    
+        <div class="mb-8">
+            <h2 class="text-2xl">VAR:</h2>
+            <p>
+                A var variable has functional scope.This means that it is present and accessible only within that function.It is possible to modify and re-declare it within the scope.
+            </p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl">LET:</h2>
+            <p>
+                A let variable has a block scope.A variable declared with let in a block can only be used within that block.Variables declared with let, like var, can be updated within their scope. A let variable, unlike var, cannot be redefined within its scope. 
+            </p>
+        </div>
+        <div class="mb-8">
+            <h2 class="text-2xl">CONST:</h2>
+            <p>
+                Variables declared with the const keyword keep their values constant. Const declarations are similar to let declarations. A const variable has a block scope.Within its scope, the value of a variable declared with const remains constant. It can't be changed or declared again.
+            </p>
+        </div>
+    </section>
+
+    <section class="border rounded-lg bg-teal-700 p-14 m-14 text-rose-500">
+        <h1 class="text-4xl text-center underline mb-3">The use cases of null and undefined</h1>
+
+        <div class="mb-8">
+            <h2 class="text-2xl">NULL:</h2>
+            <p>
+                Null is an object in JavaScript. It is the purposeful absence of value.It is one of JavaScript's primitive values.The value null is an assignment value. It can be assigned to a variable as a representation of nothing. 
+
+            </p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl">UNDEFINED:</h2>
+            <p>
+                Undefined indicates that a variable has been declared but no value has been assigned to it. It means the value does not exist in the compiler.It is the global object.It is a feature of ECMAScript1 (ES1).
+
+            </p>
+        </div>
+    </section>
+
+    <section class="border rounded-lg bg-emerald-800 p-14 m-14 text-white">
+        <h1 class="text-4xl text-center underline mb-3">Rest API</h1>
+        <p>
+            An API, or application programming interface, is a set of rules that define how different applications or devices can connect to and communicate with one another. A REST API is an API that adheres to the REST, or representational state transfer, design principles. As a result, REST APIs are also referred to as RESTful APIs.
+            <br>
+            A RESTful API is an interface that allows two computer systems to securely exchange data over the internet.A RESTful API performs the same basic function as browsing the internet. When a resource is required, the client contacts the server via the API. In the server application API documentation, API developers explain how the client should use the REST API.
+             <h6 class="font-semibold my-4">Some of the REST architectural principles are as follows:</h6>
+            <ul class="list-disc">
+                <li>Uniform interface</li>
+                <li>Layered system</li>
+                <li>Cacheability</li>
+                <li>Code on demand</li>
+            </ul>
+
+            <h6 class="font-semibold my-4">RESTful APIs offer the following advantages:</h6>
+            <ul class="list-disc">
+                <li>Scalability</li>
+                <li>Flexibility</li>
+                <li>Independence</li>
+            </ul>
+
+        </p>
+        
+    </section>
+    
+
+    
+</body>
+</html>
