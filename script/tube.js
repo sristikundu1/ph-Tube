@@ -13,7 +13,7 @@ const handleCategory = async () => {
     data.data.forEach(category => {
         const div = document.createElement('div');
         div.innerHTML = `
-     <a onclick="handleLoadData('${category.category_id}')" class="tab btn btn-md normal-case mx-1 hover:bg-color-primary">${category.category}</a> 
+     <a onclick="handleLoadData('${category.category_id}')" class="tab btn btn-sm normal-case mx-1 hover:bg-color-primary">${category.category}</a> 
      `;
         tabContainer.appendChild(div);
     });
