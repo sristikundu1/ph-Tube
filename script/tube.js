@@ -13,7 +13,7 @@ const handleCategory = async () => {
     data.data.forEach(category => {
         const div = document.createElement('div');
         div.innerHTML = `
-     <a onclick="handleLoadData('${category.category_id}')" class="tab btn btn-md normal-case mx-1">${category.category}</a> 
+     <a onclick="handleLoadData('${category.category_id}')" class="tab btn btn-md normal-case mx-1 hover:bg-color-primary">${category.category}</a> 
      `;
         tabContainer.appendChild(div);
     });
@@ -30,11 +30,12 @@ const handleLoadData = async (categoryId) => {
 
     fetchData = data.data;
     noFetchData = data;
-    console.log(fetchData);
+    //console.log(fetchData);
     
     displayData();
 };
 function displayData(){
+
     const noCardContainer = document.getElementById('no-card-container');
     noCardContainer.innerHTML = "";
     const cardContainer = document.getElementById('card-container');
@@ -99,23 +100,18 @@ function displayData(){
 
 function handleSortData(){
     document.getElementById('sortButton').addEventListener('click', function () {
-        comArray = [];
       
         let sortValue = sort();
         console.log(sortValue);
         fetchData = sortValue;
-        displayData();
-        
-       
-       
-        
+        displayData();   
        
     });
 
 };
 
 function sort(){
-    let view = []; 
+    //let view = []; 
     const sortedData = fetchData.sort(function (a, b) { return  parseFloat(b.others.views) -  parseFloat(a.others.views) });
 return sortedData;
   
@@ -134,14 +130,10 @@ function convertTime(second) {
     return `${hours} hrs ${minutes} min ago`
 }
 
-function buttonHidden(id) {
-    const buttonId = document.getElementById(id);
-    buttonId.style.display = 'none';
-}
-
 
 document.getElementById('blogButton').addEventListener('click', function () {
     window.location.href = 'blog.html'
 
 
 });
+
